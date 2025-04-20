@@ -14,6 +14,7 @@
       height: 100vh;
       margin: 0;
       overflow: hidden;
+      flex-direction: column;
     }
     .card {
       background: white;
@@ -22,6 +23,7 @@
       padding: 2rem;
       text-align: center;
       max-width: 400px;
+      z-index: 1;
     }
     h1 {
       color: #ff6f61;
@@ -36,7 +38,7 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      z-index: -1;
+      z-index: 0;
     }
     .balloon {
       position: absolute;
@@ -51,6 +53,14 @@
       0% { transform: translateY(0); opacity: 1; }
       100% { transform: translateY(-110vh); opacity: 0; }
     }
+    .photo {
+      margin-top: 1rem;
+    }
+    .photo img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
@@ -63,7 +73,13 @@
   </div>
   <div class="card">
     <h1>🎉 Happy Birthday, Saumya! 🎂</h1>
-    <p>Wishing you a day filled with love, laughter, and cake! 🥳<br>May your year ahead be as amazing as you are!</p>
+    <p>
+    Wishing you a day filled with love, laughter, and cake! 🥳<br>
+    May your year ahead be as amazing as you are!<br><br>
+    I still remember admiring how you were the topper back then — but now, you seem even cooler and so much more fun! ✨</p>
+    <div class="photo">
+      <img src="/mnt/data/WhatsApp Image 2025-04-20 at 23.23.40_0c860012.jpg" alt="Saumya's Photo">
+    </div>
   </div>
 </body>
 </html>
